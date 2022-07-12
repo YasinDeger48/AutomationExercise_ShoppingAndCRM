@@ -33,4 +33,14 @@ public class HomePage extends LoginPage {
 
     @FindBy(xpath = "//ul/li[8]//a")
     public WebElement contactUsLink;
+
+    @FindBy(id = "susbscribe_email")
+    public WebElement subscribeEmailBox;
+
+    @FindBy(id = "subscribe")
+    public WebElement subscribeArrowButton;
+
+
+
+
 }
