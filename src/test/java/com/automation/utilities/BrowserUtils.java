@@ -1,4 +1,8 @@
-package com.orange.utilities;
+package com.automation.utilities;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class BrowserUtils {
 
@@ -10,4 +14,13 @@ public class BrowserUtils {
 
         }
     }
+
+
+    public static WebElement isVisible(WebDriver driver , String string){
+
+       return driver.findElement(By.xpath("//*[.='"+string+"']"));
+
+    }
+
+
 }

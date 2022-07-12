@@ -1,4 +1,4 @@
-package com.orange.utilities;
+package com.automation.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
