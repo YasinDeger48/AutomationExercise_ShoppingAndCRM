@@ -28,7 +28,7 @@ public class SearchProductStepDefinitions {
     @When("User verifies searched product is visible")
     public void user_verifies_searched_product_is_visible() {
 
-        List<WebElement> listedElementsAfterSearching = productsPage.listedElementsAfterSearching;
+        List<WebElement> listedElementsAfterSearching = productsPage.listedElementsAllProducts;
         Assert.assertTrue(listedElementsAfterSearching.size()>0);
 
 

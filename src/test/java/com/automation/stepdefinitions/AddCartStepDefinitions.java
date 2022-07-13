@@ -7,14 +7,21 @@ import com.automation.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Browser;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class AddCartStepDefinitions {
 
     ProductsPage productsPage = new ProductsPage();
     CartPage cartPage = new CartPage();
     Actions actions = new Actions(Driver.getDriver());
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
     @When("User hover over the first product and add to cart")
     public void user_hover_over_the_first_product_and_add_to_cart() {
@@ -24,12 +31,7 @@ public class AddCartStepDefinitions {
         productsPage.firstElementAddToCartButton.click();
 
     }
-    @When("User clicks the {string} button")
-    public void user_clicks_the_button(String string) {
 
-        BrowserUtils.isVisible(Driver.getDriver(),string).click();
-
-    }
     @When("User hover over the second product and add to cart")
     public void user_hover_over_the_second_product_and_add_to_cart() {
 

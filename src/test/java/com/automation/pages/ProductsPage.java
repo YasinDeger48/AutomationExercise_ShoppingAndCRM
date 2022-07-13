@@ -47,8 +47,13 @@ public class ProductsPage extends HomePage{
     public WebElement searchProductSearchButton;
 
     @FindBy(xpath = "//a[contains(@style,'color: brown;')]")
-    public List<WebElement> listedElementsAfterSearching;
+    public List<WebElement> listedElementsAllProducts;
 
     @FindBy(xpath = "(//div[@class='productinfo text-center']//p)")
     public List<WebElement> descriptionAllElementsAfterSearching;
+
+    @FindBy(id = "quantity")
+    public WebElement quantityInTheCart;
+
+
 }

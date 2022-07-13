@@ -27,4 +27,16 @@ public class CartPage extends ProductsPage{
 
     @FindBy(xpath = "//tbody//tr[2]//td[5]//p")
     public WebElement secondElementTotalPrice;
+
+    @FindBy(xpath = "//button[@class='btn btn-default cart']")
+    public WebElement addToCartButton;
+
+    @FindBy(xpath = "(//a[@href='/login'])[2]")
+    public WebElement registerLoginLink;
+
+    @FindBy(name = "message")
+    public WebElement commentBoxInCart;
+
+    @FindBy(id = "submit")
+    public WebElement payAndConfirmOrderButton;
 }
