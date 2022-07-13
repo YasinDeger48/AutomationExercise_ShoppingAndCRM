@@ -1,4 +1,6 @@
 ## Automation Exercise Shopping and CRM
+<img src="https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM/blob/master/logo.png" width="180" >
+
 ### Cucumber Framework for AutomationExercise Application
 ## _Framework Format_
 
