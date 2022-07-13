@@ -8,7 +8,7 @@
 ## Clone the repository and make the desired code changes:
 
 ```sh
-git clone https://github.com/YasinDeger48/XFleet_Cucumber.git
+git clone https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM.git
 ```
 
 
@@ -53,7 +53,103 @@ Create Utility packages:
 - cross browser testing
 
 create resources directory same level with java directory the purpose is to hold our scenarios for the project
+## Quick Start:
 
-<img src="https://github.com/YasinDeger48/XFleet_Cucumber/blob/master/cucumber.png" width="80" height="80">
+1.  Download the lastest stable release or clone the git repo 
+```sh
+git clone https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM.git
+```
+2.  Open IDE and update all maven libraries
+<img src="https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM/blob/master/maven%20reset.png" width="80" height="60">
+
+4.  if you use gradle or Ant you can choose your library base on the requirements 
+
+(You can find all libraries [here](https://mvnrepository.com/)
+
+    
+
+## Requirements:
+
+Selenium 4: 
+> Version 4.1.2
+
+```sh
+<dependency>
+     <groupId>org.seleniumhq.selenium</groupId>
+     <artifactId>selenium-java</artifactId>
+     <version>4.1.2</version>
+</dependency>
+```
 
 
+WebDriver: 
+> Version 5.2.0 (Bonigarcia)
+
+```sh
+<dependency>
+     <groupId>io.github.bonigarcia</groupId>
+     <artifactId>webdrivermanager</artifactId>
+     <version>5.2.0</version>
+</dependency>
+```
+Java Faker: 
+> Version 1.0.2
+
+```sh
+<dependency>
+     <groupId>com.github.javafaker</groupId>
+     <artifactId>javafaker</artifactId>
+     <version>1.0.2</version>
+</dependency>
+```
+
+
+Cucumber-Java: 
+> Version 7.3.3
+
+```sh
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.3.3</version>
+</dependency>
+```
+
+Cucumber-JUnit: 
+> Version 7.3.3
+
+```sh
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.3.3</version>
+    <scope>test</scope>
+</dependency>
+```
+
+Maven Surefire Plugin: 
+> Version 3.0.0 M7
+
+```sh
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <configuration>
+                    <includes>
+                        <include>*CukesRunner.class</include>
+                    </includes>
+                    <parallel>methods</parallel>
+                    <threadCount>3</threadCount>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+```
+## Test Result:
+
+<img src="https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM/blob/master/testresult.png" width="1100" height="1200">
