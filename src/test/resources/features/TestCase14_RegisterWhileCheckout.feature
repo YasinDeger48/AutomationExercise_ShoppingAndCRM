@@ -1,6 +1,6 @@
 Feature: Place Order: Register while Checkout
 
-  @wildcheckout
+  @w1
   Scenario: Place Order: Register while Checkout
     Given User go to the automationexercise homepage
     When User sees homepage

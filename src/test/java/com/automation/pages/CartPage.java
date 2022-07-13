@@ -42,4 +42,11 @@ public class CartPage extends ProductsPage{
 
     @FindBy(xpath = "//a[@class='cart_quantity_delete']")
     public WebElement deleteButtonInCart;
+
+
+    @FindBy(id = "address_delivery")
+    public WebElement addressDelivery;
+
+    @FindBy(id = "address_invoice")
+    public WebElement addressBilling;
 }

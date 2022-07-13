@@ -1,5 +1,7 @@
 package com.automation.pages;
 
+import com.automation.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -55,5 +57,23 @@ public class ProductsPage extends HomePage{
     @FindBy(id = "quantity")
     public WebElement quantityInTheCart;
 
+
+    @FindBy(xpath = "//button[.='Continue Shopping']")
+    public WebElement continueShoppingButton;
+
+
+
+    public WebElement hoverElement(int elementNumber){
+
+       return Driver.getDriver().findElement(By.xpath("(//div[@class='single-products'])["+elementNumber+"]"));
+
+    }
+
+
+    public WebElement addElement(int elementNumber){
+
+        return Driver.getDriver().findElement(By.xpath("(//div[@class='overlay-content']//a)["+elementNumber+"]"));
+
+    }
 
 }

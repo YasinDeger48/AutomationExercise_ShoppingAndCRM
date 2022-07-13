@@ -3,6 +3,8 @@ package com.automation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class HomePage extends LoginPage {
 
 
@@ -39,6 +41,10 @@ public class HomePage extends LoginPage {
 
     @FindBy(id = "subscribe")
     public WebElement subscribeArrowButton;
+
+
+    @FindBy(xpath = "//div[@id='recommended-item-carousel']//a[contains(@class,'add-to-cart')]")
+    public List<WebElement> recommendedElementsAddButtons;
 
 
 
