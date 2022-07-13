@@ -1,4 +1,4 @@
-# Automation_Exercise_Shopping_and_CRM
+## Automation Exercise Shopping and CRM
 ### Cucumber Framework for AutomationExercise Application
 ## _Framework Format_
 
