@@ -152,4 +152,4 @@ Maven Surefire Plugin:
 ```
 ## Test Result:
 
-<img src="https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM/blob/master/testresult.png" width="1100" height="800">
+<img src="https://github.com/YasinDeger48/Automation_Exercise_Shopping_and_CRM/blob/master/testresult.png" width="1100">
