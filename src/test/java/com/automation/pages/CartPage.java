@@ -39,4 +39,7 @@ public class CartPage extends ProductsPage{
 
     @FindBy(id = "submit")
     public WebElement payAndConfirmOrderButton;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    public WebElement deleteButtonInCart;
 }
