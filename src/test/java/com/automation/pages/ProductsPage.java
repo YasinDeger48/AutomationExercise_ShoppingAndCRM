@@ -13,6 +13,18 @@ public class ProductsPage extends HomePage{
     @FindBy(xpath = "//a[@href='/product_details/1']")
     public WebElement firstProduct;
 
+    @FindBy(xpath = "(//div[@class='single-products'])[1]")
+    public WebElement firstElementForHover;
+
+    @FindBy(xpath = "(//div[@class='single-products'])[2]")
+    public WebElement secondElementForHover;
+
+    @FindBy(xpath = "//a[@data-product-id='1']")
+    public WebElement firstElementAddToCartButton;
+
+    @FindBy(xpath = "//a[@data-product-id='2']")
+    public WebElement secondElementAddToCartButton;
+
     @FindBy(xpath = "//div[@class='product-information']//h2")
     public WebElement productName;
 
